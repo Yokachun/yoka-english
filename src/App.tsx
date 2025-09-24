@@ -3,6 +3,7 @@ import heroImg from './assets/hero image.png'
 import logo from './assets/logo.png'
 import speakingMock from './assets/mockup.png'
 import speakingIcon from './assets/speaking icon.png'
+import vocaIcon from './assets/vocaicon.png'
 import appleIcon from './assets/apple.svg'
 import mockup2 from './assets/mockup2.png'
 
@@ -80,7 +81,6 @@ function App() {
                 <div className="icon-wrap"><img className="feature-icon" src={speakingIcon} alt="Speaking icon" /></div>
                 <div>
                   <h3 className="feature-title">Improve Your Speaking</h3>
-                  <p className="feature-sub">Speak Confidently</p>
                   <ul className="checklist">
                     <li><span className="check">✓</span> Real conversation scenarios</li>
                     <li><span className="check">✓</span> Native speaker examples</li>
@@ -95,10 +95,9 @@ function App() {
             <div className="feature-card with-image">
               <div className="feature-content">
                 <div className="icon-wrap"> 
-                  <img className="feature-icon" src={speakingIcon} alt="Vocabulary icon" /></div>
+                  <img className="feature-icon" src={vocaIcon} alt="vocaicon" /></div>
                 <div>
                   <h3 className="feature-title">Build Your Vocabulary</h3>
-                  <p className="feature-sub">Mark Your Comfort Level</p>
                   <ul className="checklist">
                     <li><span className="check">✓</span> Spaced repetition algorithm</li>
                     <li><span className="check">✓</span> Progress tracking</li>
