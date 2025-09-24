@@ -8,11 +8,16 @@ import mockup2 from './assets/mockup2.png'
 
 function App() {
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault(); // 這一行是關鍵！它會阻止表單的默認提交行為
     // 在這裡處理表單資料，例如發送到後端 API 或進行其他操作
     console.log("表單已提交！但頁面沒有重新加載。");
     // 您可以在這裡添加您的表單提交邏輯
+  };
+
+  const handleDownloadApp = () => {
+    // 打開 App Store 的 Yoka English 應用頁面
+    window.open('https://apps.apple.com/ca/app/yoka-english/id6747695231', '_blank');
   };
 
 
@@ -28,7 +33,7 @@ function App() {
             <a href="#about">About</a>
             <a href="#features">Features</a>
             <a href="#contact">Contact</a>
-            <button className="btn-primary">Download App</button>
+            <button className="btn-primary" onClick={handleDownloadApp}>Download App</button>
           </nav>
         </div>
       </header>
@@ -43,7 +48,7 @@ function App() {
                 Transform your English speaking skills with our innovative app featuring
                 vocabulary flashcards and phrase practice for real conversations.
               </p>
-              <button className="store-btn"><img className="store-icon" src={appleIcon} alt="Apple" /> Download for iOS</button>
+              <button className="store-btn" onClick={handleDownloadApp}><img className="store-icon" src={appleIcon} alt="Apple" /> Download for iOS</button>
             </div>
             <div>
               <img src={heroImg} alt="App preview" style={{ width: '800px', maxWidth: '100%', justifySelf:'center' }}/>
@@ -113,7 +118,7 @@ function App() {
           <div className="container">
             <h3>Ready to Start Learning?</h3>
             <p>Join thousands of learners who are already improving their English with Speak Easy</p>
-            <button className="store-btn"><img className="store-icon" src={appleIcon} alt="Apple" /> Download for iOS</button>
+            <button className="store-btn" onClick={handleDownloadApp}><img className="store-icon" src={appleIcon} alt="Apple" /> Download for iOS</button>
           </div>
         </section>
 
