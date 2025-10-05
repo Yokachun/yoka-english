@@ -35,8 +35,6 @@ p {
   font-size: 20px; /* change this to whatever size you want */
   line-height: 1.3; /* optional, improves readability */
 }
-
-.
 .store-icon { width: 20px; height: 20px; object-fit: contain; filter: brightness(0) invert(1); }
 
 /* Sections */
